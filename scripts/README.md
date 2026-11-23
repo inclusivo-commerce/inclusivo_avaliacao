@@ -26,8 +26,8 @@ descartável, conforme o objetivo de cada teste.
 - `compare.mjs`: compara achados e cobertura entre avaliações.
 - `lighthouse.mjs`: realiza as verificações com Lighthouse.
 - `sandbox.mjs` e `sandbox.py`: preparam o backend e os dados isolados.
-- `../frontend/e2e/accessibility/` e `../frontend/e2e/evaluation/`: contêm os cenários de teste.
-- `../frontend/e2e/helpers/accessibility-audit.ts`: reúne funções de auditoria e verificação de foco.
+- `.accessibility/` e `.evaluation/`: contêm os cenários de teste.
+- `.helpers/accessibility-audit.ts`: reúne funções de auditoria e verificação de foco.
 
 ## Evidências e limites
 
@@ -38,3 +38,11 @@ resultados inconclusivos são apresentados separadamente.
 A ausência de violações automáticas não comprova conformidade integral com WCAG
 ou ABNT. A avaliação deve ser complementada por revisão humana, incluindo o uso
 de leitores de tela e a análise da adequação do conteúdo.
+
+## Referências técnicas
+
+- **Playwright** — execução dos cenários no navegador, auditoria por estado da interface e anexos de teste. [Guia de testes de acessibilidade](https://playwright.dev/docs/accessibility-testing)
+- **axe-core** — integração com os testes e classificação dos achados automáticos e inconclusivos. [@axe-core/playwright](https://github.com/dequelabs/axe-core-npm/tree/develop/packages/playwright) · [Documentação da API](https://www.deque.com/axe/core-documentation/api-documentation/)
+- **ESLint e jsx-a11y** — execução e regras da análise estática de acessibilidade em componentes JSX. [Referência da linha de comando](https://eslint.org/docs/latest/use/command-line-interface) · [Regras do plugin jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y#supported-rules)
+- **Lighthouse** — interpretação da pontuação de acessibilidade das páginas auditadas. [Documentação da pontuação](https://developer.chrome.com/docs/lighthouse/accessibility/scoring)
+- **WCAG 2.2 (W3C)** — referência para os critérios de sucesso e os níveis A e AA abordados pelos testes. [Recomendação WCAG 2.2](https://www.w3.org/TR/WCAG22/)
