@@ -1,0 +1,2322 @@
+{
+  "tool": "axe-core",
+  "version": "4.12.1",
+  "startedAt": "2026-11-19T19:30:09.975Z",
+  "commitBase": "7468f3e0ff9ec13e554333559e5943d00943d78d",
+  "sourceDiffSha256": "628be949744399b28264197be6e74a2f4a669dbc67aaa639bfe1c2a72864f206",
+  "auditedPaths": 28,
+  "auditedViews": 34,
+  "audits": 164,
+  "auditsByDataMode": {
+    "controlled-api-fixtures": 142,
+    "backend-real-read-only": 6,
+    "backend-real-isolated": 16
+  },
+  "ruleEvaluations": 10501,
+  "violationOccurrences": 0,
+  "inconclusiveOccurrences": 481,
+  "inconclusiveByRule": {
+    "aria-hidden-focus": 36,
+    "aria-required-children": 4,
+    "aria-valid-attr-value": 170,
+    "color-contrast": 271
+  },
+  "coverage": [
+    {
+      "url": "http://127.0.0.1:62590/",
+      "scope": "document",
+      "stage": "pagina-publica",
+      "testId": "d68f0cd72f843bb174ec-b3a77f3e83687e2b96f3",
+      "title": "accessibility\\a11y.spec.ts > @a11y a página / não deve ter violações WCAG automatizáveis",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/",
+      "scope": "document",
+      "stage": "pagina-publica",
+      "testId": "d68f0cd72f843bb174ec-b55803e5ecda772f3d2e",
+      "title": "accessibility\\a11y.spec.ts > @a11y a página / não deve ter violações WCAG automatizáveis",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "pagina-publica",
+      "testId": "d68f0cd72f843bb174ec-f78bff2fb06ecf7d8aa9",
+      "title": "accessibility\\a11y.spec.ts > @a11y a página /login não deve ter violações WCAG automatizáveis",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "pagina-publica",
+      "testId": "d68f0cd72f843bb174ec-bfeb126522551141bbcb",
+      "title": "accessibility\\a11y.spec.ts > @a11y a página /login não deve ter violações WCAG automatizáveis",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "pagina-publica",
+      "testId": "d68f0cd72f843bb174ec-aaff22708a7fde88b79b",
+      "title": "accessibility\\a11y.spec.ts > @a11y a página /shop não deve ter violações WCAG automatizáveis",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "pagina-publica",
+      "testId": "d68f0cd72f843bb174ec-227e5c8da02a43618efb",
+      "title": "accessibility\\a11y.spec.ts > @a11y a página /shop não deve ter violações WCAG automatizáveis",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/pre-register",
+      "scope": "document",
+      "stage": "pagina-publica",
+      "testId": "d68f0cd72f843bb174ec-8a035d9f44db51638afe",
+      "title": "accessibility\\a11y.spec.ts > @a11y a página /pre-register não deve ter violações WCAG automatizáveis",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/pre-register",
+      "scope": "document",
+      "stage": "pagina-publica",
+      "testId": "d68f0cd72f843bb174ec-f8980e1de1e6933e290b",
+      "title": "accessibility\\a11y.spec.ts > @a11y a página /pre-register não deve ter violações WCAG automatizáveis",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "[data-accessibility-ui]",
+      "stage": "painel-alto-contraste",
+      "testId": "7810da784bb8126f2a98-c3d0f9443975acf04886",
+      "title": "accessibility\\accessibility-panel.spec.ts > @a11y @responsive painel completo sem cortes e com espaçamento em 320px",
+      "project": "chromium",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "painel-completo",
+      "testId": "7810da784bb8126f2a98-c3d0f9443975acf04886",
+      "title": "accessibility\\accessibility-panel.spec.ts > @a11y @responsive painel completo sem cortes e com espaçamento em 320px",
+      "project": "chromium",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "[data-accessibility-ui]",
+      "stage": "painel-alto-contraste",
+      "testId": "7810da784bb8126f2a98-ff19802211242b0f8002",
+      "title": "accessibility\\accessibility-panel.spec.ts > @a11y @responsive painel completo sem cortes e com espaçamento em 320px",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "painel-completo",
+      "testId": "7810da784bb8126f2a98-ff19802211242b0f8002",
+      "title": "accessibility\\accessibility-panel.spec.ts > @a11y @responsive painel completo sem cortes e com espaçamento em 320px",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "[data-accessibility-ui]",
+      "stage": "painel-alto-contraste",
+      "testId": "7810da784bb8126f2a98-6f3ccc7e8d2091038487",
+      "title": "accessibility\\accessibility-panel.spec.ts > @a11y @responsive painel completo sem cortes e com espaçamento em 1280px",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "painel-completo",
+      "testId": "7810da784bb8126f2a98-6f3ccc7e8d2091038487",
+      "title": "accessibility\\accessibility-panel.spec.ts > @a11y @responsive painel completo sem cortes e com espaçamento em 1280px",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "[data-accessibility-ui]",
+      "stage": "painel-alto-contraste",
+      "testId": "7810da784bb8126f2a98-eec75c66f3632d1638d2",
+      "title": "accessibility\\accessibility-panel.spec.ts > @a11y @responsive painel completo sem cortes e com espaçamento em 1280px",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "painel-completo",
+      "testId": "7810da784bb8126f2a98-eec75c66f3632d1638d2",
+      "title": "accessibility\\accessibility-panel.spec.ts > @a11y @responsive painel completo sem cortes e com espaçamento em 1280px",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/edit-profile",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-789a1b8d815936bbcde3",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /customer/edit-profile",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/edit-profile",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-278dbe193ce53a6d1798",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /customer/edit-profile",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/addresses",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-17565bd7e01bd0ad8e53",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /addresses",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/addresses",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-de63a1555a3cc57e5c23",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /addresses",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/seller/add-product",
+      "scope": "[role=\"dialog\"]",
+      "stage": "cadastro-produto-dialogo",
+      "testId": "8708faf471356bea34d9-6ef3fedb459ba991f807",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y diálogo de cadastro de produto autenticado",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/seller/add-product",
+      "scope": "[role=\"dialog\"]",
+      "stage": "cadastro-produto-dialogo",
+      "testId": "8708faf471356bea34d9-95718c1191f2777ae5c1",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y diálogo de cadastro de produto autenticado",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shipping",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-0896baac13d7f8587be5",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /shipping",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shipping",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-1711fcf66eae3a5f03f8",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /shipping",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-f8b484f949777000517b",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /customer/dashboard",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-23306546773a552616a3",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /customer/dashboard",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/seller/edit-profile",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-797b70d13706d0271dbf",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /seller/edit-profile",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/seller/edit-profile",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-e366fcf6e187b1d69ce1",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /seller/edit-profile",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard",
+      "scope": "#accessibility-controls-panel",
+      "stage": "painel-autenticado",
+      "testId": "8708faf471356bea34d9-f88a502e572f1889400a",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y painel dinâmico de preferências autenticadas",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard",
+      "scope": "#accessibility-controls-panel",
+      "stage": "painel-autenticado",
+      "testId": "8708faf471356bea34d9-4e8ab81061f4652100ae",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y painel dinâmico de preferências autenticadas",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/checkout",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-364bc26258fadcd77222",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /checkout",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/checkout",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-8b332ec08aee946ef953",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /checkout",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/seller/dashboard",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-ba761ed37c5dc434830a",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /seller/dashboard",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/seller/dashboard",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-2f9e8ef0788e2d2ef7d0",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /seller/dashboard",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/seller/add-product",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-7d5e8ef5bb9fba01f84f",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /seller/add-product",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/seller/add-product",
+      "scope": "document",
+      "stage": "area-autenticada",
+      "testId": "8708faf471356bea34d9-b35ad4b9bd9bfe0e8596",
+      "title": "accessibility\\authenticated-a11y.spec.ts > @a11y área autenticada /seller/add-product",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "document",
+      "stage": "ajustes-combinados",
+      "testId": "9ed1a5cbf4e5e18357df-f4b246458ca7a86e2690",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > ajustes combinados em tela estreita: /product/1",
+      "project": "chromium",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "document",
+      "stage": "ajustes-combinados",
+      "testId": "9ed1a5cbf4e5e18357df-81056d20f61c50148d3f",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > ajustes combinados em tela estreita: /product/1",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "login-rejeitado",
+      "testId": "9ed1a5cbf4e5e18357df-1627b84a4def0fceb1b2",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > erros de login são associados aos campos e corrigíveis por teclado",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "login-validacao",
+      "testId": "9ed1a5cbf4e5e18357df-1627b84a4def0fceb1b2",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > erros de login são associados aos campos e corrigíveis por teclado",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "login-rejeitado",
+      "testId": "9ed1a5cbf4e5e18357df-7bc0269c75709f440adf",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > erros de login são associados aos campos e corrigíveis por teclado",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "login-validacao",
+      "testId": "9ed1a5cbf4e5e18357df-7bc0269c75709f440adf",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > erros de login são associados aos campos e corrigíveis por teclado",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "busca-cabecalho",
+      "testId": "9ed1a5cbf4e5e18357df-564ffbeee398a5611136",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > busca do cabeçalho associa o diálogo e devolve foco ao fechar",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "busca-cabecalho",
+      "testId": "9ed1a5cbf4e5e18357df-4d4ae6b71628cd6f27b5",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > busca do cabeçalho associa o diálogo e devolve foco ao fechar",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "[data-accessibility-ui]",
+      "stage": "painel-contraste",
+      "testId": "9ed1a5cbf4e5e18357df-aaa9a94b2dd481d4209a",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > painel e confirmações são operáveis por teclado com retorno de foco",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "[data-accessibility-ui]",
+      "stage": "painel-contraste",
+      "testId": "9ed1a5cbf4e5e18357df-a3dd3253e3db4b1809c9",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > painel e confirmações são operáveis por teclado com retorno de foco",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "aparencia-grayscale",
+      "testId": "9ed1a5cbf4e5e18357df-c3907f12f215e84e18ca",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > aparência da página inteira: grayscale",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "aparencia-grayscale",
+      "testId": "9ed1a5cbf4e5e18357df-5e8c87977c16202777b0",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > aparência da página inteira: grayscale",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/checkout",
+      "scope": "document",
+      "stage": "checkout",
+      "testId": "9ed1a5cbf4e5e18357df-77882b85c49b44e4953a",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > compra por teclado: busca, produto, endereço, frete e checkout",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shipping",
+      "scope": "document",
+      "stage": "frete",
+      "testId": "9ed1a5cbf4e5e18357df-77882b85c49b44e4953a",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > compra por teclado: busca, produto, endereço, frete e checkout",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "document",
+      "stage": "produto",
+      "testId": "9ed1a5cbf4e5e18357df-77882b85c49b44e4953a",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > compra por teclado: busca, produto, endereço, frete e checkout",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/checkout",
+      "scope": "document",
+      "stage": "checkout",
+      "testId": "9ed1a5cbf4e5e18357df-53511f265ee574bc1246",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > compra por teclado: busca, produto, endereço, frete e checkout",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shipping",
+      "scope": "document",
+      "stage": "frete",
+      "testId": "9ed1a5cbf4e5e18357df-53511f265ee574bc1246",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > compra por teclado: busca, produto, endereço, frete e checkout",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "document",
+      "stage": "produto",
+      "testId": "9ed1a5cbf4e5e18357df-53511f265ee574bc1246",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > compra por teclado: busca, produto, endereço, frete e checkout",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "ajustes-combinados",
+      "testId": "9ed1a5cbf4e5e18357df-835a43805407f8598e57",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > ajustes combinados em tela estreita: /shop",
+      "project": "chromium",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "ajustes-combinados",
+      "testId": "9ed1a5cbf4e5e18357df-9061b6c65941f5e64b2e",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > ajustes combinados em tela estreita: /shop",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "preferencias-restauradas",
+      "testId": "9ed1a5cbf4e5e18357df-ccb67e05fb422942e310",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > salvamento sobrevive ao reload e restauração remove apenas a seção escolhida",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "preferencias-restauradas",
+      "testId": "9ed1a5cbf4e5e18357df-35155be80d61ea70174d",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > salvamento sobrevive ao reload e restauração remove apenas a seção escolhida",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "texto-200",
+      "testId": "9ed1a5cbf4e5e18357df-a74487ca64eef0dfe923",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > texto ampliado a 200% continua legível e formulário operável",
+      "project": "chromium",
+      "viewport": {
+        "width": 640,
+        "height": 900
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "texto-200",
+      "testId": "9ed1a5cbf4e5e18357df-34a769c4d8b2cfd42485",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > texto ampliado a 200% continua legível e formulário operável",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 640,
+        "height": 900
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "menu-movel",
+      "testId": "9ed1a5cbf4e5e18357df-f619819f889a7839c0f7",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > menu móvel fecha com Escape, retorna foco e permite navegar por teclado",
+      "project": "chromium",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "menu-movel",
+      "testId": "9ed1a5cbf4e5e18357df-b174cf52a77b04a38574",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > menu móvel fecha com Escape, retorna foco e permite navegar por teclado",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "ajustes-combinados",
+      "testId": "9ed1a5cbf4e5e18357df-0723fe10b7dda380637f",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > ajustes combinados em tela estreita: /login",
+      "project": "chromium",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "ajustes-combinados",
+      "testId": "9ed1a5cbf4e5e18357df-2ac2b31f42c3fb9bbdc0",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > ajustes combinados em tela estreita: /login",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop#main-content",
+      "scope": "document",
+      "stage": "cores-forcadas-movimento",
+      "testId": "9ed1a5cbf4e5e18357df-89defc8ff47d5784abac",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > preferências do sistema preservam foco e reduzem movimento",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop#main-content",
+      "scope": "document",
+      "stage": "cores-forcadas-movimento",
+      "testId": "9ed1a5cbf4e5e18357df-9ffd95036f1cf621cc7c",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > preferências do sistema preservam foco e reduzem movimento",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "document",
+      "stage": "carrinho",
+      "testId": "9ed1a5cbf4e5e18357df-69aff6d0a01a02ff9904",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > carrinho anuncia inclusão e mantém foco dentro do diálogo",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "document",
+      "stage": "carrinho",
+      "testId": "9ed1a5cbf4e5e18357df-3c522ab31ecc9309516f",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > carrinho anuncia inclusão e mantém foco dentro do diálogo",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "aparencia-highContrast",
+      "testId": "9ed1a5cbf4e5e18357df-54ac751adc520d9b8294",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > aparência da página inteira: highContrast",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "aparencia-highContrast",
+      "testId": "9ed1a5cbf4e5e18357df-7d618da00be6dd76a436",
+      "title": "accessibility\\developer-accessibility.spec.ts > @a11y auditoria pelos desenvolvedores > aparência da página inteira: highContrast",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "[role=\"dialog\"]",
+      "stage": "lateralidade",
+      "testId": "a3d62c806023d8af659d-a68102f1b3030131c8be",
+      "title": "accessibility\\prif-a11y.spec.ts > @a11y PRIF — produto e compra compartilhada > expõe uma árvore acessível para a seleção de lateralidade",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "[role=\"dialog\"]",
+      "stage": "lateralidade",
+      "testId": "a3d62c806023d8af659d-6fac1e3d3dec2058089f",
+      "title": "accessibility\\prif-a11y.spec.ts > @a11y PRIF — produto e compra compartilhada > expõe uma árvore acessível para a seleção de lateralidade",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/register/seller",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-cef7571462948ee237f9",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /register/seller",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/register/seller",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-32a06d4c94ee3e052575",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /register/seller",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/register/customer",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-30002b257243d286c7c8",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /register/customer",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/register/customer",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-c71a03bbe6181d5b8ce5",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /register/customer",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/forgot-password",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-17c39c9b722df9aec3ef",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /forgot-password",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/forgot-password",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-20563e0ebaa7cab28548",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /forgot-password",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-88fd12f1bd03abf8c707",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /product/1",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-630ad2bf16e824623640",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /product/1",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shared-purchases",
+      "scope": "document",
+      "stage": "backend-real",
+      "testId": "41f71f6be0e7a1e56b20-2aab3973f1d0f7ad79b7",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @live @evaluation backend real somente leitura /shared-purchases",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-read-only"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shared-purchases",
+      "scope": "document",
+      "stage": "backend-real",
+      "testId": "41f71f6be0e7a1e56b20-a378d177eefca950d929",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @live @evaluation backend real somente leitura /shared-purchases",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-read-only"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "backend-real",
+      "testId": "41f71f6be0e7a1e56b20-e43f6e270b46b823b357",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @live @evaluation backend real somente leitura /shop",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-read-only"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "backend-real",
+      "testId": "41f71f6be0e7a1e56b20-a65e6737f2b7b0d0f7d5",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @live @evaluation backend real somente leitura /shop",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-read-only"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "filtro-par-completo",
+      "testId": "41f71f6be0e7a1e56b20-05947d37aa6dc02e28fb",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @keyboard @evaluation filtros de lateralidade com Tab, Espaço e setas",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "filtro-par-completo",
+      "testId": "41f71f6be0e7a1e56b20-996bf7b9446d1e77590d",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @keyboard @evaluation filtros de lateralidade com Tab, Espaço e setas",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "catalogo-erro",
+      "testId": "41f71f6be0e7a1e56b20-a0144b27ae9e0c677e8a",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation catálogo indisponível e recuperação anunciados",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "catalogo-recuperado",
+      "testId": "41f71f6be0e7a1e56b20-a0144b27ae9e0c677e8a",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation catálogo indisponível e recuperação anunciados",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "catalogo-erro",
+      "testId": "41f71f6be0e7a1e56b20-58d6e2259585b5229534",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation catálogo indisponível e recuperação anunciados",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "catalogo-recuperado",
+      "testId": "41f71f6be0e7a1e56b20-58d6e2259585b5229534",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation catálogo indisponível e recuperação anunciados",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/seller/dashboard?tab=orders",
+      "scope": "document",
+      "stage": "estado-autenticado",
+      "testId": "41f71f6be0e7a1e56b20-e2c7d59675f3b3d44db4",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation estado autenticado /seller/dashboard?tab=orders",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/seller/dashboard?tab=orders",
+      "scope": "document",
+      "stage": "estado-autenticado",
+      "testId": "41f71f6be0e7a1e56b20-c452de5793f6b939d56c",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation estado autenticado /seller/dashboard?tab=orders",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/about",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-76e484401a5267d98f0e",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /about",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/about",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-43c993d96a16f6fd9dd3",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /about",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/accessibility",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-4c8c3797864ba9f6a88a",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /accessibility",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/accessibility",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-d520ec98dc3764f79f42",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /accessibility",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shared-purchases",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-3b0763aed8de33bfbdd6",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /shared-purchases",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shared-purchases",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-29c192b9839381a86475",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /shared-purchases",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard?tab=shared-purchases",
+      "scope": "document",
+      "stage": "estado-autenticado",
+      "testId": "41f71f6be0e7a1e56b20-4aa37721cfc7714b00ec",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation estado autenticado /customer/dashboard?tab=shared-purchases",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard?tab=shared-purchases",
+      "scope": "document",
+      "stage": "estado-autenticado",
+      "testId": "41f71f6be0e7a1e56b20-b5aa53882e1f861b2a99",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation estado autenticado /customer/dashboard?tab=shared-purchases",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/reset-password",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-eab9b2c382274e3a9839",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /reset-password",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/reset-password",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "41f71f6be0e7a1e56b20-7bf68b979d4865360869",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation página pública e semântica /reset-password",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "backend-real",
+      "testId": "41f71f6be0e7a1e56b20-15f906ecbd8d914a5490",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @live @evaluation backend real somente leitura /login",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-read-only"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "backend-real",
+      "testId": "41f71f6be0e7a1e56b20-90e71be22497f0b8e574",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @live @evaluation backend real somente leitura /login",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-read-only"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard?tab=messages",
+      "scope": "document",
+      "stage": "estado-autenticado",
+      "testId": "41f71f6be0e7a1e56b20-8bf8f236be7ec19f3555",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation estado autenticado /customer/dashboard?tab=messages",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard?tab=messages",
+      "scope": "document",
+      "stage": "estado-autenticado",
+      "testId": "41f71f6be0e7a1e56b20-66a65c2d66420919d396",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation estado autenticado /customer/dashboard?tab=messages",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/seller/dashboard?tab=messages",
+      "scope": "document",
+      "stage": "estado-autenticado",
+      "testId": "41f71f6be0e7a1e56b20-fad749a2f19df6edfdae",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation estado autenticado /seller/dashboard?tab=messages",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/seller/dashboard?tab=messages",
+      "scope": "document",
+      "stage": "estado-autenticado",
+      "testId": "41f71f6be0e7a1e56b20-3ae8a3bb7fdca5cb721a",
+      "title": "evaluation\\evaluation-a11y.spec.ts > @a11y @evaluation estado autenticado /seller/dashboard?tab=messages",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard?tab=messages",
+      "scope": "document",
+      "stage": "conversa-envio-controlado",
+      "testId": "d404fc312f9e3943547d-d02e40c6a47a6932f3a9",
+      "title": "evaluation\\evaluation-chat-a11y.spec.ts > @a11y @keyboard @evaluation conversa, rascunho e envio por teclado com API controlada",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard?tab=messages",
+      "scope": "document",
+      "stage": "conversa-rascunho",
+      "testId": "d404fc312f9e3943547d-d02e40c6a47a6932f3a9",
+      "title": "evaluation\\evaluation-chat-a11y.spec.ts > @a11y @keyboard @evaluation conversa, rascunho e envio por teclado com API controlada",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard?tab=messages",
+      "scope": "document",
+      "stage": "conversa-envio-controlado",
+      "testId": "d404fc312f9e3943547d-7d37e47c78a1ceddc396",
+      "title": "evaluation\\evaluation-chat-a11y.spec.ts > @a11y @keyboard @evaluation conversa, rascunho e envio por teclado com API controlada",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard?tab=messages",
+      "scope": "document",
+      "stage": "conversa-rascunho",
+      "testId": "d404fc312f9e3943547d-7d37e47c78a1ceddc396",
+      "title": "evaluation\\evaluation-chat-a11y.spec.ts > @a11y @keyboard @evaluation conversa, rascunho e envio por teclado com API controlada",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "#navbar-search-panel",
+      "stage": "navbar-busca",
+      "testId": "5238017695cdd333a9f4-9fd39c31d155f6ed6d55",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > navbar e busca por teclado em /login",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "pagina-publica",
+      "testId": "5238017695cdd333a9f4-9fd39c31d155f6ed6d55",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > navbar e busca por teclado em /login",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "#navbar-search-panel",
+      "stage": "navbar-busca",
+      "testId": "5238017695cdd333a9f4-12b83cbb5d310789f6e4",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > navbar e busca por teclado em /login",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "pagina-publica",
+      "testId": "5238017695cdd333a9f4-12b83cbb5d310789f6e4",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > navbar e busca por teclado em /login",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "#navbar-search-panel",
+      "stage": "navbar-busca",
+      "testId": "5238017695cdd333a9f4-f59ef3951a540beaaa5f",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > navbar e busca por teclado em /shop",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "pagina-publica",
+      "testId": "5238017695cdd333a9f4-f59ef3951a540beaaa5f",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > navbar e busca por teclado em /shop",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "#navbar-search-panel",
+      "stage": "navbar-busca",
+      "testId": "5238017695cdd333a9f4-991c50b0a563ee20e8ea",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > navbar e busca por teclado em /shop",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "pagina-publica",
+      "testId": "5238017695cdd333a9f4-991c50b0a563ee20e8ea",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > navbar e busca por teclado em /shop",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "#accessibility-controls-panel",
+      "stage": "painel-regressao",
+      "testId": "5238017695cdd333a9f4-3c16d4c47a55517bf5b0",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > painel de acessibilidade abre e fecha preservando foco em cada rota",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "#accessibility-controls-panel",
+      "stage": "painel-regressao",
+      "testId": "5238017695cdd333a9f4-b580c99b6d6a7dd3281b",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > painel de acessibilidade abre e fecha preservando foco em cada rota",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "loja-http503-carregando",
+      "testId": "5238017695cdd333a9f4-bf90d92f6677fee32db3",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > loja: http503, carregamento e recuperação",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "loja-http503-erro",
+      "testId": "5238017695cdd333a9f4-bf90d92f6677fee32db3",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > loja: http503, carregamento e recuperação",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "loja-http503-recuperada",
+      "testId": "5238017695cdd333a9f4-bf90d92f6677fee32db3",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > loja: http503, carregamento e recuperação",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "loja-http503-carregando",
+      "testId": "5238017695cdd333a9f4-d6c03e5db5fe5cdf8bb0",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > loja: http503, carregamento e recuperação",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "loja-http503-erro",
+      "testId": "5238017695cdd333a9f4-d6c03e5db5fe5cdf8bb0",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > loja: http503, carregamento e recuperação",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "loja-http503-recuperada",
+      "testId": "5238017695cdd333a9f4-d6c03e5db5fe5cdf8bb0",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > loja: http503, carregamento e recuperação",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "multiplos-erros-login",
+      "testId": "5238017695cdd333a9f4-ac93beae2a2db22e6b44",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > formulário /login: erros simultâneos sem submissão externa",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "multiplos-erros-login",
+      "testId": "5238017695cdd333a9f4-b3934bb89905ef3bd035",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > formulário /login: erros simultâneos sem submissão externa",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "loja-transport-carregando",
+      "testId": "5238017695cdd333a9f4-0a0e86540b1bbd5392b9",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > loja: transport, carregamento e recuperação",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "loja-transport-erro",
+      "testId": "5238017695cdd333a9f4-0a0e86540b1bbd5392b9",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > loja: transport, carregamento e recuperação",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "loja-transport-recuperada",
+      "testId": "5238017695cdd333a9f4-0a0e86540b1bbd5392b9",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > loja: transport, carregamento e recuperação",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "loja-transport-carregando",
+      "testId": "5238017695cdd333a9f4-04915c4604bb47836381",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > loja: transport, carregamento e recuperação",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "loja-transport-erro",
+      "testId": "5238017695cdd333a9f4-04915c4604bb47836381",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > loja: transport, carregamento e recuperação",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shop",
+      "scope": "document",
+      "stage": "loja-transport-recuperada",
+      "testId": "5238017695cdd333a9f4-04915c4604bb47836381",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > loja: transport, carregamento e recuperação",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "#navbar-search-panel",
+      "stage": "navbar-busca",
+      "testId": "5238017695cdd333a9f4-fd3b9db09f389b0c2bc4",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > navbar e busca por teclado em /product/1",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "#navbar-search-panel",
+      "stage": "navbar-busca",
+      "testId": "5238017695cdd333a9f4-ca3da887e09e8269efba",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > navbar e busca por teclado em /product/1",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "[role=\"dialog\"]",
+      "stage": "modal-lateralidade-teclado",
+      "testId": "5238017695cdd333a9f4-167d0a482db7a5e4c64f",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > modal de lateralidade: setas, Tab, Shift+Tab e retorno do foco",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/1",
+      "scope": "[role=\"dialog\"]",
+      "stage": "modal-lateralidade-teclado",
+      "testId": "5238017695cdd333a9f4-45e26f76943da32d52f6",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > modal de lateralidade: setas, Tab, Shift+Tab e retorno do foco",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shared-purchases",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "5238017695cdd333a9f4-f70475a2fb8b75c32e32",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > mural preserva auditoria comparável com a rodada anterior",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shared-purchases",
+      "scope": "document",
+      "stage": "pagina-ampliada",
+      "testId": "5238017695cdd333a9f4-6966223f451f31b5d706",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded @regression componentes compartilhados > mural preserva auditoria comparável com a rodada anterior",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/register/customer",
+      "scope": "document",
+      "stage": "multiplos-erros-customer",
+      "testId": "5238017695cdd333a9f4-dcd3e2f0f97902360db6",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > formulário /register/customer: erros simultâneos sem submissão externa",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/register/customer",
+      "scope": "document",
+      "stage": "multiplos-erros-customer",
+      "testId": "5238017695cdd333a9f4-67c0fc9ea10da1045269",
+      "title": "evaluation\\evaluation-expanded-a11y.spec.ts > @a11y @expanded estados difíceis > formulário /register/customer: erros simultâneos sem submissão externa",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard",
+      "scope": "document",
+      "stage": "notificacoes-abertas",
+      "testId": "dd805e8e8614226ffc84-94563d98cd27e6d08a5a",
+      "title": "evaluation\\evaluation-notifications-a11y.spec.ts > @a11y @keyboard @evaluation notificações abertas e retorno de foco",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard",
+      "scope": "document",
+      "stage": "notificacoes-abertas",
+      "testId": "dd805e8e8614226ffc84-8da09398d8915ac8e8f3",
+      "title": "evaluation\\evaluation-notifications-a11y.spec.ts > @a11y @keyboard @evaluation notificações abertas e retorno de foco",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "sessao-expirada-real",
+      "testId": "33251faac7927813d879-90e2963a4b6965462900",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > sessão expirada é rejeitada pelo servidor e volta ao login",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/login",
+      "scope": "document",
+      "stage": "sessao-expirada-real",
+      "testId": "33251faac7927813d879-946738d8687edfd1ab4c",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > sessão expirada é rejeitada pelo servidor e volta ao login",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard?tab=shared-purchases",
+      "scope": "document",
+      "stage": "reserva-expirada-real",
+      "testId": "33251faac7927813d879-49b148dc2d3787e78cec",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > reserva expira no servidor e mostra prazo encerrado",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard?tab=shared-purchases",
+      "scope": "document",
+      "stage": "reserva-expirada-real",
+      "testId": "33251faac7927813d879-d5519a8355949d6ad95a",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > reserva expira no servidor e mostra prazo encerrado",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/4",
+      "scope": "document",
+      "stage": "carrinho-gravado-real",
+      "testId": "33251faac7927813d879-503b60c591c6418e36fa",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > comprador autentica pela interface e inclui produto no carrinho",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard",
+      "scope": "document",
+      "stage": "comprador-real",
+      "testId": "33251faac7927813d879-503b60c591c6418e36fa",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > comprador autentica pela interface e inclui produto no carrinho",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/22",
+      "scope": "document",
+      "stage": "carrinho-gravado-real",
+      "testId": "33251faac7927813d879-5e6abd0f57aa600cbfed",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > comprador autentica pela interface e inclui produto no carrinho",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/customer/dashboard",
+      "scope": "document",
+      "stage": "comprador-real",
+      "testId": "33251faac7927813d879-5e6abd0f57aa600cbfed",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > comprador autentica pela interface e inclui produto no carrinho",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/19",
+      "scope": "[role=\"dialog\"]",
+      "stage": "modal-reserva-real",
+      "testId": "33251faac7927813d879-bab3a3adafe7f221cc40",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > publicação de reserva pela interface persiste no banco real",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shared-purchases?highlight=8",
+      "scope": "document",
+      "stage": "reserva-publicada-real",
+      "testId": "33251faac7927813d879-bab3a3adafe7f221cc40",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > publicação de reserva pela interface persiste no banco real",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/37",
+      "scope": "[role=\"dialog\"]",
+      "stage": "modal-reserva-real",
+      "testId": "33251faac7927813d879-817886cb211c47b354c2",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > publicação de reserva pela interface persiste no banco real",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shared-purchases?highlight=15",
+      "scope": "document",
+      "stage": "reserva-publicada-real",
+      "testId": "33251faac7927813d879-817886cb211c47b354c2",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > publicação de reserva pela interface persiste no banco real",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/7",
+      "scope": "document",
+      "stage": "vendedor-produto-real",
+      "testId": "33251faac7927813d879-5f2afc55214297a6911d",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > vendedor autentica e visualiza seu anúncio persistido",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/25",
+      "scope": "document",
+      "stage": "vendedor-produto-real",
+      "testId": "33251faac7927813d879-f0688193c6ea1ecc9129",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > vendedor autentica e visualiza seu anúncio persistido",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/14",
+      "scope": "document",
+      "stage": "sem-estoque-real",
+      "testId": "33251faac7927813d879-2618ffb406b4dd915110",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > estoque zerado bloqueia compra na interface e no servidor",
+      "project": "chromium",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/product/32",
+      "scope": "document",
+      "stage": "sem-estoque-real",
+      "testId": "33251faac7927813d879-1042bdf7357b5412e45f",
+      "title": "evaluation\\evaluation-real-api-a11y.spec.ts > @a11y @expanded @real-api backend isolado real > estoque zerado bloqueia compra na interface e no servidor",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 412,
+        "height": 839
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "backend-real-isolated"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shared-purchases",
+      "scope": "document",
+      "stage": "mural-com-reservas",
+      "testId": "9c218b948d5fe350a75e-b700c17228e24184baea",
+      "title": "shared-purchases\\shared-reservations-discovery.spec.ts > @a11y mural com filtros e detalhes abertos em 320px",
+      "project": "chromium",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    },
+    {
+      "url": "http://127.0.0.1:62590/shared-purchases",
+      "scope": "document",
+      "stage": "mural-com-reservas",
+      "testId": "9c218b948d5fe350a75e-a4a9d8d0e2c8aaea9fda",
+      "title": "shared-purchases\\shared-reservations-discovery.spec.ts > @a11y mural com filtros e detalhes abertos em 320px",
+      "project": "mobile-chromium",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "browserVersion": "149.0.7827.55",
+      "dataMode": "controlled-api-fixtures"
+    }
+  ]
+}
